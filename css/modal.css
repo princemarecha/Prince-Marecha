@@ -1,0 +1,78 @@
+.modal1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.6);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    width: 500px;
+    max-width: 80%;
+}
+.modal1.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal1-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px white solid;
+}
+
+.modal1-header .modal1-title{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.modal1-header .close-button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: #d5d5d5;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.ptr{
+    cursor: pointer;
+}
+.lnk a{
+    text-decoration: none;
+    color: white;
+}
+.lnk a:hover{
+    color: white;
+    opacity: 70%;
+}
+
+/* Chrome, Safari, Edge, Opera  scroll button on number text*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

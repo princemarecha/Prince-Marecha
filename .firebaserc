@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "prince-marecha",
+    "prince": "marecha-prince",
+    "marecha": "marecha-prince",
+    "yes": "marecha-prince"
+  },
+  "targets": {}
+}
