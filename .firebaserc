@@ -3,7 +3,9 @@
     "default": "prince-marecha",
     "prince": "marecha-prince",
     "marecha": "marecha-prince",
-    "yes": "marecha-prince"
+    "yes": "marecha-prince",
+    "marechaprince": "marecha-prince"
   },
-  "targets": {}
+  "targets": {},
+  "etags": {}
 }
